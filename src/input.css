@@ -1,0 +1,137 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* NAVBAR */
+.navbar-fixed {
+  @apply fixed z-[9999] bg-white bg-opacity-80;
+  backdrop-filter: blur(5px);
+  box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.2);
+}
+
+/* HUMBURGER */
+.hamburger-line {
+  @apply w-[1.8rem] h-[0.125rem] my-2 block bg-black;
+}
+
+.hamburger-active > span:nth-child(1) {
+  @apply origin-top-left rotate-45;
+}
+
+.hamburger-active > span:nth-child(2) {
+  @apply scale-0;
+}
+
+.hamburger-active > span:nth-child(3) {
+  @apply -rotate-45;
+}
+
+.container2 {
+  @apply flex items-center justify-between;
+}
+
+.tittle_logo {
+  @apply text-black font-fontSecondary not-italic font-bold text-[1.5rem];
+}
+
+.nav_list {
+  @apply text-base font-fontSecondary text-black py-2 mx-8 flex group-hover:text-[#f12b2b];
+}
+
+.container_hero_image {
+  @apply h-[30rem] bg-primary pt-36;
+}
+
+.h2_login {
+  @apply text-black text-center text-[2rem] font-bold not-italic;
+}
+
+.label_form_login {
+  @apply text-center text-[1rem] font-normal not-italic;
+}
+
+.input_form_login {
+  @apply text-[1rem] h-[2rem] w-full rounded-[0.625rem] border-[0.063rem] border-black px-[0.5rem];
+}
+
+.btn_form_login {
+  @apply h-[2rem] text-[1rem] font-semibold not-italic text-black bg-[#5B9A8B] w-full rounded-[3.125rem];
+}
+
+/* ====> HERO IMAGE <==== */
+.main {
+  @apply bg-primary h-[30rem] flex justify-center items-center pt-20 pb-5 gap-3;
+}
+
+.container1_text_heroImg {
+  @apply flex flex-col items-center justify-center;
+}
+.tittle_heroImg {
+  @apply text-[2.5rem] text-black text-center font-fontPrimary font-normal leading-normal tracking-wider;
+}
+
+.desc_heroImg {
+  @apply font-fontSecondary text-[1rem] font-normal text-center leading-normal;
+}
+/* ====> Akhir HERO IMAGE <==== */
+
+/* ====> PRODUCT <==== */
+.menu_wrapper {
+  @apply w-full h-auto flex items-center justify-center  bg-secondary;
+}
+
+.menu_container {
+  @apply flex flex-col mx-auto my-4 p-[1rem] gap-[1rem] lg:flex-row lg:items-center lg:justify-center md:flex-row md:flex-wrap md:items-center md:justify-center sm:flex-row sm:flex-wrap sm:items-center sm:justify-center;
+}
+
+.menu_container_card {
+  @apply relative  bg-colorCard h-auto p-4 flex-col items-center justify-center max-w-[17rem] rounded-[0.5rem] border-[1px] gap-[1rem] shadow-lg;
+}
+.menu_card {
+  @apply flex flex-col items-center justify-center gap-[1rem] rounded-[0.5rem] border-[1px];
+}
+/* ====> Akhir PRODUCT <==== */
+
+/* ====> QUOTE <==== */
+.quote_wrapper {
+  @apply flex w-full px-4 py-10 mx-auto lg:flex lg:items-center lg:justify-center md:flex md:items-center md:justify-center sm:flex sm:items-center sm:justify-center bg-third;
+}
+
+.quote_container1 {
+  @apply flex flex-col w-full gap-10 lg:flex lg:items-center lg:justify-center;
+}
+
+.quote_container2 {
+  @apply flex flex-col lg:flex lg:flex-row lg:items-start gap-4 lg:gap-4 md:flex-row md:flex-wrap md:items-start md:justify-center sm:flex-row sm:flex-wrap sm:items-start sm:justify-center;
+}
+
+.quote_container_text {
+  @apply flex flex-col lg:w-[16rem] md:w-[16rem] sm:w-[16rem] gap-2;
+}
+
+.quote_Tittle {
+  @apply font-fontPrimary text-black text-[2rem] tracking-normal leading-[1.2em] items-start;
+}
+
+.quote_tittleText {
+  @apply font-fontSecondary font-normal text-[1.25rem] text-black tracking-[-0.025em] leading-[1.5em] items-start;
+}
+
+.quote_descText {
+  @apply font-fontSecondary font-normal text-black text-[1rem] leading-[1.5em] items-center;
+}
+/* ====> Akhir QUOTE<==== */
+
+/* ====> FOOTER <==== */
+.footer_wrapper {
+  @apply bg-third pt-12 pb-6;
+}
+
+.footer_container_text {
+  @apply px-4 mb-12 max-w-[17rem];
+}
+
+.footer_tittle_text{
+  @apply text-[1.5rem] font-fontSecondary font-semibold;
+}
+/* ====> Akhir FOOTER <==== */
